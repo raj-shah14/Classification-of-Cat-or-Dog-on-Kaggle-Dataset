@@ -84,7 +84,7 @@ def create_cnn(model_path=None):
 if __name__ == "__main__":
     #Opening the image for prediction
     file_path='dataset/single_prediction/cat_or_dog_2.jpg'
-    im=cv2.resize(cv2.imread(file_path),(64,64)).astype(np.float32)
+    im=cv2.resize(cv2.imread(file_path),(150,150)).astype(np.float32)
     #cv2.imshow('Sample',cv2.resize(cv2.imread(file_path),(640,480)))
     im = np.expand_dims(im, axis=0)
     
