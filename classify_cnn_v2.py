@@ -94,7 +94,7 @@ if __name__ == "__main__":
             model=load_model(filename)
             print('Model Loaded')
     else:
-        print('Model Not found, Creating a new M')
+        print('Model Not found, Creating a new Model')
         model=create_cnn('classifier.h5')
     
     #Compiling the model and predicting Output    
